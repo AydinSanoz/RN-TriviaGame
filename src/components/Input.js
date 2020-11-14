@@ -8,6 +8,8 @@ export const Input =(props ) => {
             <TextInput
                 placeholder = {props.text}
                 onChangeText = {props.onText}
+                keyboardType = {props.type}
+                secureTextEntry = {props.password}
             />
         </View>
     )

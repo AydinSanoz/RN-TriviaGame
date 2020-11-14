@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {SafeAreaView, View, Image, Alert, KeyboardAvoidingView,ScrollView} from 'react-native';
+import {SafeAreaView, View, Image, Alert, KeyboardAvoidingView,ScrollView, Platform} from 'react-native';
 import {Input, Button} from '../components';
 import {authStyles} from './styles';
 import auth from '@react-native-firebase/auth';
@@ -12,6 +12,7 @@ export const Login = (props) => {
     auth()
       .signInWithEmailAndPassword(email, password)
       .then(() => {
+        props.navigation.navigate('Timeline')
         console.log('User account created & signed in!');
       })
       .catch((error) => {
@@ -21,13 +22,15 @@ export const Login = (props) => {
             'That email address is already in use!',
           );
         }
-        if (error.code === 'auth/ınvalıd-emaıl') {
+        if (error.code === 'auth/invalid-email') {
           Alert.alert('WELCOME MY_TRIVIA', 'That email address is invalid!');
         }
         if (error.code === 'auth/user-not-found') {
           Alert.alert('WELCOME MY_TRIVIA', 'User not found. Sign up Please..');
         }
-        console.error(error.code);
+        if (error.code === 'auth/wrong-password') {
+          Alert.alert('WELCOME MY_TRIVIA', 'Wrong password..');
+        }
       });
   }
   const dispatch = useDispatch();
@@ -35,8 +38,11 @@ export const Login = (props) => {
   const password = useSelector((state) => state.password);
   
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <KeyboardAvoidingView style={{flex: 1, backgroundColor: 'gray'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor :'gray'}}>
+      <KeyboardAvoidingView 
+        style={{flex: 1, backgroundColor: 'gray'}}
+        behavior = {Platform.OS =='ios' ? 'padding' :null}
+      >
         <ScrollView style={{flex: 1}}>
           <View style={authStyles.container}>
             <Image
@@ -46,10 +52,13 @@ export const Login = (props) => {
             <Input
               text="Enter your email"
               onText={(e) => dispatch({type: 'SET-EMAIL', payload: e})}
+              type = 'email-address'
+              
             />
             <Input
               text="Enter your password"
               onText={(p) => dispatch({type: 'SET-PASSWORD', payload: p})}
+              password 
             />
             <Button title="Login" onPress={() => Login(email,password)} />
             <Button

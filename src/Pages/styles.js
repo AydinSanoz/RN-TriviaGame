@@ -9,6 +9,7 @@ export const authStyles = StyleSheet.create({
     height: Dimensions.get('window').height * 0.25,
     resizeMode: 'contain',
     alignSelf : 'center',
+    margin : 40,
   },
 
 });

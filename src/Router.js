@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import {initialStates, reducer} from './context';
 
-import {Login, Sign} from './Pages';
+import {Login, Sign, Timeline} from './Pages';
 
 const Stack = createStackNavigator();
 const store = createStore(reducer, initialStates);
@@ -14,9 +14,11 @@ const Router = () => {
   return (
     <Provider store = {store}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName = "Login" screenOptions = {{headerShown : false}}>
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Sign" component={Sign} />
+          <Stack.Screen name="Timeline" component={Timeline} />
+
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
