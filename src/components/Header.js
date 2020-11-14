@@ -1,10 +1,34 @@
 import React from 'react'
 import { View, Text } from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {header} from './styles';
+
 
 export const Header = (props) =>{
-    return(
-        <View>
-            <Text>Header Section</Text>
-        </View>
-    )
+   
+        return (
+            <View style={header.container}>
+              <View style={header.textContainer}>
+                <Text style={header.text}>#{props.title}</Text>
+              </View>
+              <View style={{justifyContent: 'center', flexDirection: 'row'}}>
+                <Icon
+                  name="hexagon-multiple"
+                  size={30}
+                  color="#69007f"
+                  onPress={props.onTopicModalSelect}
+                  style={{
+                    marginRight: 10
+                  }}
+                />
+                <Icon 
+                  name="login" 
+                  size={30} 
+                  color="#69007f"
+                  onPress={props.onLogOut}
+                />
+              </View>
+            </View>
+          );
+
 }

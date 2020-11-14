@@ -44,3 +44,21 @@ export const buttonOutlineStyles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
+
+export const header = StyleSheet.create({
+  container: {
+     flexDirection: 'row',
+     padding: 5,
+     alignItems: 'center',
+     borderBottomWidth: 1,
+     borderColor: '#90a4ae'
+  },  
+  textContainer: {
+     flex: 1
+  },  
+  text: {
+     fontSize: 30,
+     fontWeight: 'bold',
+     color: '#78909c'
+  },  
+});
