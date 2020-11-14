@@ -45,20 +45,25 @@ export const buttonOutlineStyles = StyleSheet.create({
   },
 });
 
-export const header = StyleSheet.create({
+export const headerStyles = StyleSheet.create({
   container: {
-     flexDirection: 'row',
-     padding: 5,
-     alignItems: 'center',
-     borderBottomWidth: 1,
-     borderColor: '#90a4ae'
-  },  
+    flexDirection : 'row',
+    borderBottomWidth : 2,
+    borderColor : 'gray',
+    justifyContent : 'space-between',
+  },
+  iconContainer:{
+    flexDirection : 'row',
+    // width : 90,
+    justifyContent : 'space-between'
+
+  },
   textContainer: {
-     flex: 1
+    //  flex: 1
   },  
   text: {
-     fontSize: 30,
-     fontWeight: 'bold',
-     color: '#78909c'
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: '#78909c'
   },  
 });

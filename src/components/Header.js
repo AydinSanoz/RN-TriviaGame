@@ -1,34 +1,28 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import {View, Text, Alert} from 'react-native';
+import {headerStyles} from './styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {header} from './styles';
 
-
-export const Header = (props) =>{
-   
-        return (
-            <View style={header.container}>
-              <View style={header.textContainer}>
-                <Text style={header.text}>#{props.title}</Text>
-              </View>
-              <View style={{justifyContent: 'center', flexDirection: 'row'}}>
-                <Icon
-                  name="hexagon-multiple"
-                  size={30}
-                  color="#69007f"
-                  onPress={props.onTopicModalSelect}
-                  style={{
-                    marginRight: 10
-                  }}
-                />
-                <Icon 
-                  name="login" 
-                  size={30} 
-                  color="#69007f"
-                  onPress={props.onLogOut}
-                />
-              </View>
-            </View>
-          );
-
-}
+export const Header = (props) => {
+  return (
+    <View style={headerStyles.container}>
+      <View>
+        <Text style = {headerStyles.text}> # Header Page </Text>
+      </View>
+      <View style = {headerStyles.iconContainer}>
+        <Icon 
+          name = 'selection-multiple'
+          size = {40}
+          color = '#9c4dcc'
+          onPress = {()=>alert('pressed')}
+        />
+        <Icon 
+          name = 'logout'
+          size = {40}
+          color = '#9c4dcc'
+          onPress = {()=>alert('pressed')}
+        />
+      </View>
+    </View>
+  );
+};
