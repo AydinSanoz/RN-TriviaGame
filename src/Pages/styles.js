@@ -13,3 +13,10 @@ export const authStyles = StyleSheet.create({
   },
 
 });
+
+export const timelineStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    
+  }
+})

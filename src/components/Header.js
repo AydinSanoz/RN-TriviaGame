@@ -14,13 +14,13 @@ export const Header = (props) => {
           name = 'selection-multiple'
           size = {40}
           color = '#9c4dcc'
-          onPress = {()=>alert('pressed')}
+          onPress = {()=>alert('pressed first')}
         />
         <Icon 
           name = 'logout'
           size = {40}
           color = '#9c4dcc'
-          onPress = {()=>alert('pressed')}
+          onPress = {props.signOut}
         />
       </View>
     </View>

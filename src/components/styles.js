@@ -67,3 +67,24 @@ export const headerStyles = StyleSheet.create({
     color: '#78909c'
   },  
 });
+
+export const post_input = StyleSheet.create({
+  container: {
+     width: Dimensions.get('window').width * 0.9,
+     alignSelf: 'center',
+     bottom: 10,
+     position: 'absolute',
+     backgroundColor: '#e0e0e0',
+     borderRadius: 5,
+     padding: 5,
+     flexDirection: 'row',
+     borderWidth: 1,
+     borderColor: "#b0bec5"
+  },  
+  inputContainer: {
+     flex: 1,
+  },
+  button: {
+
+  }
+});

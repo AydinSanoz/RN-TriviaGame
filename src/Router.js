@@ -5,10 +5,13 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import {initialStates, reducer} from './context';
 
+
 import {Login, Sign, Timeline} from './Pages';
 
 const Stack = createStackNavigator();
 const store = createStore(reducer, initialStates);
+
+
 
 const Router = () => {
   return (
