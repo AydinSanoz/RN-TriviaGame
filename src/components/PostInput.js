@@ -11,6 +11,7 @@ export const PostInput = (props) => {
     <View style={post_input.container}>
       <View style={post_input.inputContainer}>
         <TextInput
+          value = {postText}
           multiline
           placeholder="Type something.."
           onChangeText={(value) => setPostText(value)}
@@ -18,7 +19,12 @@ export const PostInput = (props) => {
       </View>
       <TouchableOpacity
         style={{justifyContent: 'center'}}
-        onPress={() => props.onSendPost(postText)}>
+        onPress={() => {
+          props.onSendPost(postText)
+          setPostText("")
+          
+        }}
+      >
         <Icon name="telegram" size={30} color="#69007f" />
       </TouchableOpacity>
     </View>

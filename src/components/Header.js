@@ -6,15 +6,15 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 export const Header = (props) => {
   return (
     <View style={headerStyles.container}>
-      <View>
-        <Text style = {headerStyles.text}> # Header Page </Text>
+      <View style = {headerStyles.text.container}>
+        <Text style={headerStyles.text}> # {props.header} </Text>
       </View>
       <View style = {headerStyles.iconContainer}>
         <Icon 
           name = 'selection-multiple'
           size = {40}
           color = '#9c4dcc'
-          onPress = {()=>alert('pressed first')}
+          onPress = {props.onChannelSelect}
         />
         <Icon 
           name = 'logout'

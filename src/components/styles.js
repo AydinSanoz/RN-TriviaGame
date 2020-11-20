@@ -88,3 +88,50 @@ export const post_input = StyleSheet.create({
 
   }
 });
+
+export const postitem = StyleSheet.create({
+  container: {
+    marginVertical: 10,
+    backgroundColor: 'white',
+  },
+  headerContainer: {
+    padding: 5,
+    backgroundColor: '#9c27b0',
+    justifyContent: 'space-between',
+    flexDirection: 'row'
+  },
+  username: {
+    fontWeight: 'bold',
+    color: 'white',
+  },
+  bodyContainer: {
+     padding: 5
+  },
+  time: {
+    color: 'white',
+    fontStyle: 'italic'
+  }
+});
+
+export const topicModalStyles = StyleSheet.create({
+  modal: {
+    margin: 0,
+    justifyContent: 'flex-end',
+    padding: 0,
+    paddingHorizontal: 10
+  },  
+  container: {
+    paddingTop: 5,
+    backgroundColor: 'white',
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10
+  },
+  topicItemContainer: {
+     padding: 10,
+  },  
+  topicItemText: {
+     fontSize: 20,
+     fontWeight: 'bold',
+     color: '#78909c'
+  },  
+});
