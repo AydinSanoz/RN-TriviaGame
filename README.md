@@ -1,6 +1,6 @@
 # CHATDEMO
 
-## PACKAGES USED IN THIS PROJECT
+### PACKAGES USED IN THIS PROJECT
 <ul>
 <li><a href="https://reactnavigation.org/docs/hello-react-navigation/" rel="nofollow">React Navigation</a></li>
 <li><a href="https://momentjs.com/docs/#/use-it/" rel="nofollow">Moment.js</a></li>
