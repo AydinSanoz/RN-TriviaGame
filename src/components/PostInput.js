@@ -25,7 +25,7 @@ export const PostInput = (props) => {
           
         }}
       >
-        <Icon name="telegram" size={30} color="#69007f" />
+        <Icon name="telegram" size={30} color="#666ad1" />
       </TouchableOpacity>
     </View>
   );

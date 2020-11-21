@@ -13,13 +13,13 @@ export const Header = (props) => {
         <Icon 
           name = 'selection-multiple'
           size = {40}
-          color = '#9c4dcc'
+          color = '#666ad1'
           onPress = {props.onChannelSelect}
         />
         <Icon 
           name = 'logout'
           size = {40}
-          color = '#9c4dcc'
+          color = '#666ad1'
           onPress = {props.signOut}
         />
       </View>

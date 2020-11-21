@@ -1,4 +1,5 @@
 import {Dimensions, StyleSheet} from 'react-native';
+import { color } from 'react-native-reanimated';
 
 export const inputStyles = StyleSheet.create({
   container: {
@@ -64,7 +65,7 @@ export const headerStyles = StyleSheet.create({
   text: {
     fontSize: 30,
     fontWeight: 'bold',
-    color: '#78909c'
+    color: '#666ad1'
   },  
 });
 
@@ -96,7 +97,7 @@ export const postitem = StyleSheet.create({
   },
   headerContainer: {
     padding: 5,
-    backgroundColor: '#9c27b0',
+    backgroundColor: '#666ad1',
     justifyContent: 'space-between',
     flexDirection: 'row'
   },
@@ -105,7 +106,9 @@ export const postitem = StyleSheet.create({
     color: 'white',
   },
   bodyContainer: {
-     padding: 5
+     padding: 5,
+     backgroundColor : "#757575",
+     
   },
   time: {
     color: 'white',

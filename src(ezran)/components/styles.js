@@ -12,7 +12,7 @@ export const input = StyleSheet.create({
 
 export const button = StyleSheet.create({
   container: {
-    backgroundColor: 'purple',
+    backgroundColor: '#303f9f',
     margin: 10,
     padding: 10,
     alignItems: 'center',
@@ -44,7 +44,7 @@ export const postitem = StyleSheet.create({
   },
   headerContainer: {
     padding: 5,
-    backgroundColor: '#9c27b0',
+    backgroundColor: '#666ad1',
     justifyContent: 'space-between',
     flexDirection: 'row'
   },
@@ -96,7 +96,7 @@ export const header = StyleSheet.create({
    text: {
       fontSize: 30,
       fontWeight: 'bold',
-      color: '#78909c'
+      color: '#666ad1'
    },  
 });
 
@@ -119,6 +119,6 @@ export const topicModal = StyleSheet.create({
   topicItemText: {
      fontSize: 20,
      fontWeight: 'bold',
-     color: '#78909c'
+     color: '#666ad1'
   },  
 });

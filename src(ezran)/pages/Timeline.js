@@ -24,9 +24,9 @@ const Timeline = () => {
       .ref(`${value}`)
       .on('value', (snapshot) => {
         const data = snapshot.val();
-        const formattedData = Object.keys(data).map((key) => ({...data[key]}));
+        const formattedData =  data && Object.keys(data).map((key) => ({...data[key]}));
 
-        formattedData.sort((a, b) => {
+        formattedData?.sort((a, b) => {
           return new Date(b.time) - new Date(a.time);
         });
 
