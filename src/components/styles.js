@@ -16,7 +16,7 @@ export const inputStyles = StyleSheet.create({
 export const buttonStyles = StyleSheet.create({
   button: {
     margin: 15,
-    backgroundColor: '#9c4dcc',
+    backgroundColor: '#283593',
     padding: 15,
     width: Dimensions.get('window').width * 0.60,
     alignSelf: 'center',
@@ -40,7 +40,7 @@ export const buttonOutlineStyles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    color: '#9c4dcc',
+    color: '#283593',
     fontSize: 20,
     fontWeight: 'bold',
   },
