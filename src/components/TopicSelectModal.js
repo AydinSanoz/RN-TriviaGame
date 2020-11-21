@@ -3,7 +3,7 @@ import {TouchableOpacity, Text, View} from 'react-native';
 import Modal from 'react-native-modal';
 import {topicModalStyles} from './styles';
 
-const topics = ['fullstack', 'data-science', 'gaming', 'mobile', 'code&Code'];
+const topics = ['friends', 'family', 'buddies', 'loves', 'code&Code'];
 
 export const TopicSelectModal = (props) => {
   return (
