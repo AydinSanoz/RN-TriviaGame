@@ -1,5 +1,5 @@
 import {Dimensions, StyleSheet} from 'react-native';
-import { color } from 'react-native-reanimated';
+
 
 export const inputStyles = StyleSheet.create({
   container: {
