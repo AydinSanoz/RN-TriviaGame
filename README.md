@@ -1,4 +1,4 @@
-# RN-TriviaGame
+# CHATDEMO
 
 ## PACKAGES USED IN THIS PROJECT
 <ul>
