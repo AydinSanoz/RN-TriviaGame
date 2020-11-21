@@ -26,7 +26,7 @@ export const Timeline = (props) => {
       .on('value', (snapshot) => {
         const data = snapshot.val();
         const formattedData = Object.keys(data).map((key) => ({...data[key]}));
-        formattedData.sort( (b, a) =>{
+        formattedData.sort( (a, b) =>{
           return( new Date(b.time) -  new Date(a.time) )
         })
         setPostList(formattedData)
@@ -47,7 +47,6 @@ export const Timeline = (props) => {
 
   return (
     <SafeAreaView style={timelineStyles.container}>
-      <View style={timelineStyles.container}>
         <Header
           signOut={() =>
             auth()
@@ -57,13 +56,14 @@ export const Timeline = (props) => {
           onChannelSelect={() => setModalFlag(true)}
           header={selectedTopic}
         />
+      <View style={timelineStyles.container}>
       </View>
       <FlatList
         keyExtractor={(_, index) => index.toString()}
         data={postList}
         renderItem={renderPostItem}
       />
-      <PostInput value = " " onSendPost={sendingPost} />
+      <PostInput  onSendPost={sendingPost} />
       <TopicSelectModal
         modalFlag={modalFlag}
         onClose={() => setModalFlag(false)}
