@@ -1,5 +1,9 @@
 # CHATDEMO
 
+## ScreenShot of project
+
+![ios.OS](./Assets/ios.gif)|![android.OS](./Assets/android.gif)
+
 ### PACKAGES USED IN THIS PROJECT
 <ul>
 <li><a href="https://reactnavigation.org/docs/hello-react-navigation/" rel="nofollow">React Navigation</a></li>
