@@ -20,6 +20,24 @@
 		67F50F0566F19AC4A728CD89 /* libPods-myTrivia-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BD4E6A528C922239812A0A /* libPods-myTrivia-tvOSTests.a */; };
 		7A9C4AA3FEA9E83A090151E2 /* libPods-myTrivia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEFBC140E4B66DA742EAA58 /* libPods-myTrivia.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AD3335B825763369002C408A /* Pods-myTrivia.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 30BA27510F54F2211C4E50FD /* Pods-myTrivia.release.xcconfig */; };
+		AD3335BD257633FF002C408A /* Pods-myTrivia.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9D8DECA733FC9224C2A9F14B /* Pods-myTrivia.debug.xcconfig */; };
+		AD3335C225763401002C408A /* Pods-myTrivia.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9D8DECA733FC9224C2A9F14B /* Pods-myTrivia.debug.xcconfig */; };
+		AD3335D92576340E002C408A /* Pods-myTrivia.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 30BA27510F54F2211C4E50FD /* Pods-myTrivia.release.xcconfig */; };
+		AD3335DE25763411002C408A /* Pods-myTrivia-myTriviaTests.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D521C9CFA0F8CDEF6FA93F14 /* Pods-myTrivia-myTriviaTests.debug.xcconfig */; };
+		AD3335E325763412002C408A /* Pods-myTrivia-myTriviaTests.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D521C9CFA0F8CDEF6FA93F14 /* Pods-myTrivia-myTriviaTests.debug.xcconfig */; };
+		AD3335E825763415002C408A /* Pods-myTrivia-myTriviaTests.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA92209E5C2F457C916ABF2A /* Pods-myTrivia-myTriviaTests.release.xcconfig */; };
+		AD3335ED25763416002C408A /* Pods-myTrivia-myTriviaTests.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DA92209E5C2F457C916ABF2A /* Pods-myTrivia-myTriviaTests.release.xcconfig */; };
+		AD3335F225763419002C408A /* Pods-myTrivia-tvOS.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1A14AA44F96F0F577138082E /* Pods-myTrivia-tvOS.debug.xcconfig */; };
+		AD3335F72576341A002C408A /* Pods-myTrivia-tvOS.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1A14AA44F96F0F577138082E /* Pods-myTrivia-tvOS.debug.xcconfig */; };
+		AD3335FC2576341D002C408A /* Pods-myTrivia-tvOS.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F3747FCA0287C95E3821B87E /* Pods-myTrivia-tvOS.release.xcconfig */; };
+		AD3336012576341E002C408A /* Pods-myTrivia-tvOS.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F3747FCA0287C95E3821B87E /* Pods-myTrivia-tvOS.release.xcconfig */; };
+		AD33360625763425002C408A /* Pods-myTrivia-tvOSTests.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3A6F7E4D04D22B6EDC44A8D2 /* Pods-myTrivia-tvOSTests.debug.xcconfig */; };
+		AD33360B25763426002C408A /* Pods-myTrivia-tvOSTests.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3A6F7E4D04D22B6EDC44A8D2 /* Pods-myTrivia-tvOSTests.debug.xcconfig */; };
+		AD33361025763429002C408A /* Pods-myTrivia-tvOSTests.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A5C90B92708A8DE1FBB2A2BA /* Pods-myTrivia-tvOSTests.release.xcconfig */; };
+		AD3336152576342A002C408A /* Pods-myTrivia-tvOSTests.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A5C90B92708A8DE1FBB2A2BA /* Pods-myTrivia-tvOSTests.release.xcconfig */; };
+		AD33361A257634BB002C408A /* Pods-myTrivia.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9D8DECA733FC9224C2A9F14B /* Pods-myTrivia.debug.xcconfig */; };
+		AD33361F257634BB002C408A /* Pods-myTrivia.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9D8DECA733FC9224C2A9F14B /* Pods-myTrivia.debug.xcconfig */; };
 		ADD5B6E8255E7F290062A8B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADD5B6E7255E7F280062A8B4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -336,6 +354,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD33360B25763426002C408A /* Pods-myTrivia-tvOSTests.debug.xcconfig in Resources */,
+				AD3336012576341E002C408A /* Pods-myTrivia-tvOS.release.xcconfig in Resources */,
+				AD3336152576342A002C408A /* Pods-myTrivia-tvOSTests.release.xcconfig in Resources */,
+				AD3335F72576341A002C408A /* Pods-myTrivia-tvOS.debug.xcconfig in Resources */,
+				AD3335D92576340E002C408A /* Pods-myTrivia.release.xcconfig in Resources */,
+				AD3335C225763401002C408A /* Pods-myTrivia.debug.xcconfig in Resources */,
+				AD3335E325763412002C408A /* Pods-myTrivia-myTriviaTests.debug.xcconfig in Resources */,
+				AD3335ED25763416002C408A /* Pods-myTrivia-myTriviaTests.release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +369,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3335B825763369002C408A /* Pods-myTrivia.release.xcconfig in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				AD3335F225763419002C408A /* Pods-myTrivia-tvOS.debug.xcconfig in Resources */,
+				AD3335FC2576341D002C408A /* Pods-myTrivia-tvOS.release.xcconfig in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				AD3335E825763415002C408A /* Pods-myTrivia-myTriviaTests.release.xcconfig in Resources */,
+				AD33361025763429002C408A /* Pods-myTrivia-tvOSTests.release.xcconfig in Resources */,
 				ADD5B6E8255E7F290062A8B4 /* GoogleService-Info.plist in Resources */,
+				AD3335BD257633FF002C408A /* Pods-myTrivia.debug.xcconfig in Resources */,
+				AD33360625763425002C408A /* Pods-myTrivia-tvOSTests.debug.xcconfig in Resources */,
+				AD3335DE25763411002C408A /* Pods-myTrivia-myTriviaTests.debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD33361A257634BB002C408A /* Pods-myTrivia.debug.xcconfig in Resources */,
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD33361F257634BB002C408A /* Pods-myTrivia.debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
